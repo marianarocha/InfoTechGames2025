@@ -18,7 +18,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(9.63%, 1fr));
       gap: 20px;
       max-width: 1200px;
       margin: auto;
@@ -176,6 +176,7 @@
       const iframe = document.getElementById('game-frame');
       iframe.src = url;
       iframe.style.display = 'block';
+      iframe.style.textAlign = 'center';
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
   </script>
