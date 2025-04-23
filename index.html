@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information Technology Games (2025)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .icon {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    iframe {
+      width: 90%;
+      height: 80vh;
+      border: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Information Technology Games (2025)</h1>
+  <div class="grid">
+    <div class="card" onclick="loadGame('https://arcade.makecode.com/S29529-91546-60123-74847')">
+      <div class="icon">🎮</div>
+      <div>Siri-ously</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_9zh2PsKVe84T')">
+      <div class="icon">🎮</div>
+      <div>AB-GO</div>
+    </div>
+    <div class="card" onclick="loadGame('https://arcade.makecode.com/S95233-71786-74954-81247')">
+      <div class="icon">🎮</div>
+      <div>Back</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_hoDh53exb80q')">
+      <div class="icon">🎮</div>
+      <div>Believer</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_M7fMqh0btLcu')">
+      <div class="icon">🎮</div>
+      <div>Black Mamba</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_Vu124vff0XJm')">
+      <div class="icon">🎮</div>
+      <div>CODE</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_CetRDs2Wr6qK')">
+      <div class="icon">🎮</div>
+      <div>Code explorers</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_HVhKLxeMbh9w')">
+      <div class="icon">🎮</div>
+      <div>DASH</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_c0fAaW6f9C0f')">
+      <div class="icon">🎮</div>
+      <div>Freedom</div>
+    </div>
+    <div class="card" onclick="loadGame('https://makecode.com/_d0YEH2MTL65d')">
+      <div class="icon">🎮</div>
+      <div>GOLD GIRLS</div>
+    </div>
+    <div class="card" onclick="loadGame('https://arcade.makecode.com/S84601-79024-90051-53977')">
+        <div class="icon">🎮</div>
+        <div>Green Apple</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://arcade.makecode.com/S76897-39172-11479-63334')">
+        <div class="icon">🎮</div>
+        <div>Hundred-ton Kings</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://makecode.com/_VWmYWJdpPgud')">
+        <div class="icon">🎮</div>
+        <div>ITT</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://makecode.com/_A51PbhUvvM5c')">
+        <div class="icon">🎮</div>
+        <div>JBD</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://makecode.com/_HDsdfHVL0M9d')">
+        <div class="icon">🎮</div>
+        <div>JBG_BD</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://arcade.makecode.com/S70831-30350-92381-60588')">
+        <div class="icon">🎮</div>
+        <div>MIC</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://makecode.com/_Xhpet88VFaXy')">
+        <div class="icon">🎮</div>
+        <div>Month Half Cat</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://arcade.makecode.com/S06554-71871-00441-25882')">
+        <div class="icon">🎮</div>
+        <div>OK</div>
+      </div>
+      
+      <div class="card" onclick="loadGame('https://arcade.makecode.com/S19620-83050-36974-91971')">
+        <div class="icon">🎮</div>
+        <div>OKK</div>
+      </div>
+      
+      <div class="card" onclick="loadGame('https://arcade.makecode.com/S22649-21525-64020-72248')">
+        <div class="icon">🎮</div>
+        <div>Red Bull</div>
+      </div>
+      <div class="card" onclick="loadGame('https://arcade.makecode.com/S47967-22293-03561-48959')">
+        <div class="icon">🎮</div>
+        <div>silly guys</div>
+      </div>
+
+      <div class="card" onclick="loadGame('https://arcade.makecode.com/S12686-23294-65626-10215')">
+        <div class="icon">🎮</div>
+        <div>Starve</div>
+      </div>
+  </div>
+  <iframe id="game-frame" style="display:none;"></iframe>
+
+  <script>
+    function loadGame(url) {
+      const iframe = document.getElementById('game-frame');
+      iframe.src = url;
+      iframe.style.display = 'block';
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
